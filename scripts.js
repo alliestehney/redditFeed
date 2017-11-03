@@ -26,21 +26,14 @@ $.get('https://www.reddit.com/r/aww/.json', function(data) {
   	var articleTitle = $("<h4 class='title'>");
   	articleTitle.append(title);
   	
-
-  	var articleLink = $("<a href=>");
-  	articleLink.append(link);
+  	var articleLink = $("<a href='" + link + "'>Check out the source</a>");
 
   	textHolder.append(articleTitle);
   	textHolder.append(articleLink);
-
   	flexContainer.append(imageHolder);
   	flexContainer.append(textHolder);
 
-
   	postElement.append(flexContainer);
-
   	$("#main").append(postElement);
-
   }
-
 });
