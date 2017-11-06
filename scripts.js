@@ -9,7 +9,7 @@ $.get('https://www.reddit.com/r/aww/.json', function(data) {
   	var currentArticle = listOfPosts[i];
   	var title = currentArticle.data.title;
   	var thumbnail = currentArticle.data.thumbnail;
-  	var link = currentArticle.data.domain;
+  	var link = currentArticle.data.url;
 
   	//use that data to generate HTML content
 
